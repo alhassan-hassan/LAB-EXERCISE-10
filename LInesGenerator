@@ -1,0 +1,10 @@
+#include "StabbingLines.h"
+#include <iostream>
+using namespace std;
+
+void readLine(LineGenerator line) {
+     cout<<"The line has coordinates: ("<<line.point1.x_coord <<" , "<<line.point1.y_coord<<") and "
+            <<"("<<line.point2.x_coord <<" , "<<line.point2.y_coord<<")"<<endl;
+
+
+}
