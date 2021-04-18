@@ -1,0 +1,7 @@
+#include "StabbingLines.h"
+#include <iostream>
+using namespace std;
+
+void readPoint(PointsGenerator point) {
+    cout<<"The point has coordinates: ("<<point.x_coord <<" , "<<point.y_coord<<")"<<endl;
+}
