@@ -1,0 +1,13 @@
+StabbingLines: StabbingLines.h LinesGenerator.o PointsGenerator.o \
+	StabbedLines.o
+	g++ -std=c++11 StabbingLines.h LinesGenerator.o PointsGenerator.o \
+	StabbedLines.o StabbingLines.o -I
+
+LinesGenerator.o : StabbingLines.h LinesGenerator.cpp
+g++ -std=c++11 -c LinesGenerator.cpp -I.
+
+PointsGenerator.o : StabbingLines.h PointsGenerator.cpp
+g++ -std=c++11 -c PointsGenerator.cpp -I.
+
+StabbedLines.o : StabbingLines.h StabbedLines.cpp
+g++ -std=c++11 -c StabbedLines.cpp -I.
